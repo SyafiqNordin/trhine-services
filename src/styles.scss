@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-row {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center-start {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex-start-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-start-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gap-4 {
+    gap: 4px;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.white-text {
+    color: white;
+}
