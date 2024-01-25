@@ -9,6 +9,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { BookSlotComponent } from './pages/book-slot/book-slot.component';
 import { TopHeaderComponent } from './components/top-header/top-header.component';
 import { HeaderTabsComponent } from './components/header-tabs/header-tabs.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HeaderTabsComponent } from './components/header-tabs/header-tabs.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
