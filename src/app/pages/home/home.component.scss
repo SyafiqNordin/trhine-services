@@ -1,0 +1,19 @@
+:host {
+    .top-section {
+        background-image: url(../../../assets/images/home-page-image.png);
+        background-size: cover;
+    }
+
+    .bottom-section {
+        background-color: rgba(26, 26, 26, 1);
+    }
+
+    .tagline {
+        font-size: 64px;
+        font-family: Roboto Serif;
+    }
+
+    .greetings {
+        font-weight: 800;
+    }
+}

@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-
+html,
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 .flex-row {
@@ -51,6 +52,42 @@ body {
     flex-wrap: wrap;
 }
 
+.flex-10 {
+    flex: 10%;
+}
+
+.flex-20 {
+    flex: 20%;
+}
+
+.flex-30 {
+    flex: 30%;
+}
+
+.flex-40 {
+    flex: 40%;
+}
+
+.flex-50 {
+    flex: 50%;
+}
+
+.flex-60 {
+    flex: 60%;
+}
+
+.flex-70 {
+    flex: 70%;
+}
+
+.flex-80 {
+    flex: 80%;
+}
+
+.flex-90 {
+    flex: 90%;
+}
+
 .gap-4 {
     gap: 4px;
 }
@@ -63,6 +100,99 @@ body {
     gap: 16px;
 }
 
+.gap-32 {
+    gap: 32px;
+}
+
+.gap-64 {
+    gap: 64px;
+}
+
 .white-text {
     color: white;
+}
+
+.pt-8 {
+    padding-top: 8px;
+}
+
+.pt-16 {
+    padding-top: 16px;
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+
+.pt-64 {
+    padding-top: 64px;
+}
+
+.pb-8 {
+    padding-bottom: 8px;
+}
+
+.pb-16 {
+    padding-bottom: 16px;
+}
+
+.pb-32 {
+    padding-bottom: 32px;
+}
+
+.pb-64 {
+    padding-bottom: 64px;
+}
+
+.pl-8 {
+    padding-left: 8px;
+}
+
+.pl-16 {
+    padding-left: 16px;
+}
+
+.pl-32 {
+    padding-left: 32px;
+}
+
+.pl-64 {
+    padding-left: 64px;
+}
+
+.pr-8 {
+    padding-right: 8px;
+}
+
+.pr-16 {
+    padding-right: 16px;
+}
+
+.pr-32 {
+    padding-right: 32px;
+}
+
+.pr-64 {
+    padding-right: 64px;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-size {
+    height: 100%;
+    width: 100%;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
 }

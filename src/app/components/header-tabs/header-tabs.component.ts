@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { headerTabsInterface } from '../../interface/header-tabs';
+import { listOfTabs } from './listOfTabs';
 
 @Component({
   selector: 'app-header-tabs',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './header-tabs.component.scss'
 })
 export class HeaderTabsComponent {
-
+  public listOfHeaderTabs: headerTabsInterface[] = listOfTabs
 }

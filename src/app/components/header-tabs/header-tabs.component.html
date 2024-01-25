@@ -1,1 +1,12 @@
-<p>header-tabs works!</p>
+<section class="header-tabs">
+    <div class="flex-row">
+        <div class="flex-60 pl-64">
+            <img src="../../../assets/images/Company-brand.png" alt="Company-logo">
+        </div>
+        <div class="flex-40 flex-row flex-start-center gap-64">
+            <ng-container *ngFor="let tab of listOfHeaderTabs">
+                <h3 class="white-text">{{ tab.name }}</h3>
+            </ng-container>
+        </div>
+    </div>
+</section>
