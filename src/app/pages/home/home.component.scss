@@ -2,18 +2,41 @@
     .top-section {
         background-image: url(../../../assets/images/home-page-image.png);
         background-size: cover;
+        padding-bottom: 50px;
     }
 
     .bottom-section {
         background-color: rgba(26, 26, 26, 1);
+        padding-top: 50px;
     }
 
-    .tagline {
-        font-size: 64px;
-        font-family: Roboto Serif;
+    .roboto-serif-text {
+        font-family: "Roboto Serif", serif;
     }
 
-    .greetings {
-        font-weight: 800;
+    .sansita-text {
+        font-family: "Sansita Swashed", system-ui;
+        font-weight: bold;
+        color: primary;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .overlay-cards-row {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        z-index: 1;
+        height: 160px;
+    }
+
+    .overlay-cards {
+        width: 250px;
+    }
+
+    .service-icon {
+        height: 80px;
     }
 }

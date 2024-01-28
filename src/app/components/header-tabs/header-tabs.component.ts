@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { headerTabsInterface } from '../../interface/header-tabs';
-import { listOfTabs } from './listOfTabs';
+import { listOfTabs } from '../../constants/listOfTabs';
 
 @Component({
   selector: 'app-header-tabs',
