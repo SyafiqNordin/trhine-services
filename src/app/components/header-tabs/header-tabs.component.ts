@@ -8,5 +8,5 @@ import { listOfTabs } from '../../constants/listOfTabs';
   styleUrl: './header-tabs.component.scss'
 })
 export class HeaderTabsComponent {
-  public listOfHeaderTabs: headerTabsInterface[] = listOfTabs
+  public listOfHeaderTabs: headerTabsInterface[] = listOfTabs;
 }

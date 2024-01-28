@@ -5,7 +5,11 @@
         </div>
         <div class="flex-40 flex-row flex-start-center gap-64">
             <ng-container *ngFor="let tab of listOfHeaderTabs">
-                <h2 class="white-text no-margin">{{ tab.name }}</h2>
+                <button mat-button>
+                    <div class="flex-row flex-center">
+                        <h2 class="white-text no-margin">{{ tab.name }}</h2>
+                    </div>
+                </button>
             </ng-container>
         </div>
     </div>
