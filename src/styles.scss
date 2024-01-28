@@ -5,6 +5,8 @@
 .lightTheme {
     $light-primary: mat.define-palette(mat.$indigo-palette, 800);
     $light-accent: mat.define-palette(mat.$blue-grey-palette);
+    $cardBackground-primary: mat.get-color-from-palette($light-primary, 300);
+    $text-color-primary: mat.get-color-from-palette($light-primary);
 
     $light-theme: mat.define-light-theme((color: (
         primary: $light-primary,
@@ -13,19 +15,21 @@
 
     @include mat.all-component-themes($light-theme);
 
-    $cardBackground-primary: mat.get-color-from-palette($light-primary, 300);
-
-    background-color: white;
-
-    .custom-card {
+    .primary-color-card {
         background-color: $cardBackground-primary;
         color: white;
+    }
+
+    .primary-color-text {
+        color: $text-color-primary;
     }
 }
 
 .darkTheme {
-    $dark-primary: mat.define-palette(mat.$pink-palette, 800);
-    $dark-accent: mat.define-palette(mat.$cyan-palette);
+    $dark-primary: mat.define-palette(mat.$lime-palette, 900);
+    $dark-accent: mat.define-palette(mat.$grey-palette, 900);
+    $cardBackground-primary: mat.get-color-from-palette($dark-primary, 700);
+    $text-color-primary: mat.get-color-from-palette($dark-primary);
 
     $dark-theme: mat.define-dark-theme((color: (
         primary: $dark-primary,
@@ -34,15 +38,15 @@
 
     @include mat.all-component-themes($dark-theme);
 
-    $cardBackground-primary: mat.get-color-from-palette($dark-primary, 300);
-    $card-primary-text: mat.get-color-from-palette($dark-primary, 100);
-
-    background-color: black;
     color: white;
 
-    .custom-card {
+    .primary-color-card {
         background-color: $cardBackground-primary;
         color: white;
+    }
+
+    .primary-color-text {
+        color: $text-color-primary;
     }
 }
 
@@ -153,6 +157,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .white-text {
     color: white;
+}
+
+.black-text {
+    color: black;
 }
 
 .pt-8 {
