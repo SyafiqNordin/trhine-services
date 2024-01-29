@@ -1,3 +1,5 @@
 export interface headerTabsInterface {
-    name: string
+    name: string,
+    path: string,
+    active: boolean
 }

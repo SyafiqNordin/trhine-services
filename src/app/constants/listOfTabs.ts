@@ -1,14 +1,22 @@
 export const listOfTabs = [
     {
-        name: 'Home'
+        name: 'Home',
+        path: '/home',
+        active: true
     },
     {
-        name: 'About'
+        name: 'About',
+        path: '/about',
+        active: false
     },
     {
-        name: 'Services'
+        name: 'Services',
+        path: '/services',
+        active: false
     },
     {
-        name: 'Book A Slot'
+        name: 'Book A Slot',
+        path: 'book-slot',
+        active: false
     },
 ]
