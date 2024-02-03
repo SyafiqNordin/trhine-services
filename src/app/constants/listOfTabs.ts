@@ -2,7 +2,7 @@ export const listOfTabs = [
     {
         name: 'Home',
         path: '/home',
-        active: true
+        active: false
     },
     {
         name: 'About',
@@ -16,7 +16,7 @@ export const listOfTabs = [
     },
     {
         name: 'Book A Slot',
-        path: 'book-slot',
+        path: '/book-slot',
         active: false
     },
 ]
