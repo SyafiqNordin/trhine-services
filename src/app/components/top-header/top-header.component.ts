@@ -8,15 +8,15 @@ import { socialMediaInterface } from '../../interface/social-media';
 })
 export class TopHeaderComponent {
   public readonly instagram: socialMediaInterface = {
-    name: '@trhine_ig',
+    name: '@taufiqrhine',
     link: 'https://www.instagram.com/taufiqrhine/'
   };
   public readonly whatsapp: socialMediaInterface = {
-    number: '+60-123456789',
+    number: '+60-182331065',
     link: 'https://wa.me/60182331065'
   };
   public readonly tiktok: socialMediaInterface = {
-    name: 'trhine_tiktok',
+    name: '@taufiqrhinetr',
     link: 'https://www.tiktok.com/@taufiqrhinetr'
   };
   public readonly location: socialMediaInterface = { 
