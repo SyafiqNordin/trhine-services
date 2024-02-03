@@ -1,27 +1,27 @@
 <section class="top-header">
     <div class="flex-row flex-center flex-space-between">
-        <button mat-button>
+        <button mat-button (click)="goTo(instagram.link)">
             <div class="flex-row flex-center gap-4">
                 <img src="../../../assets/images/instagram.png" alt="instagram">
-                <span class="white-text">{{ instagram }}</span>
+                <span class="white-text">{{ instagram.name }}</span>
             </div>
         </button>
-        <button mat-button>
+        <button mat-button (click)="goTo(whatsapp.link)">
             <div class="flex-row flex-center gap-4">
                 <img src="../../../assets/images/whatsapp.png" alt="whatsapp">
-                <span class="white-text">{{ whatsapp }}</span>
+                <span class="white-text">{{ whatsapp.number }}</span>
             </div>
         </button>
-        <button mat-button>
+        <button mat-button (click)="goTo(tiktok.link)">
             <div class="flex-row flex-center gap-4">
                 <img src="../../../assets/images/tiktok.png" alt="tiktok">
-                <span class="white-text">{{ tiktok }}</span>
+                <span class="white-text">{{ tiktok.name }}</span>
             </div>
         </button>
-        <button mat-button>
+        <button mat-button (click)="goTo(location.link)">
             <div class="flex-row flex-center gap-4">
                 <img src="../../../assets/icons/location.png" alt="location">
-                <span class="white-text">{{ location }}</span>
+                <span class="white-text">{{ location.name }}</span>
             </div>
         </button>
         <button mat-button>

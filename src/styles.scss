@@ -79,6 +79,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     align-items: center;
 }
 
+.flex-end-center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .flex-start-start {
     display: flex;
     justify-content: flex-start;
@@ -159,6 +165,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .black-text {
     color: black;
+}
+
+.align-text-center {
+    text-align: center;
+}
+
+.sansita-text {
+    font-family: "Sansita Swashed", system-ui !important;
+}
+
+.roboto-serif-text {
+    font-family: "Roboto Serif", serif !important;
+}
+
+.roboto-slab-text {
+    font-family: "Roboto Slab", serif !important;
 }
 
 .pt-8 {

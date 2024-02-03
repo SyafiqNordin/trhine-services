@@ -1,5 +1,31 @@
 <section class="flex-column full-height">
     <app-top-header></app-top-header>
     <app-header-tabs></app-header-tabs>
-    <p>about works!</p>
+    <div class="flex-row flex-center pt-64 dark-backrground">
+        <div class="flex-column gap-16" [style.max-width.px]="530">
+            <h1 class="flex-center mat-headline-4 no-margin bold primary-color-text">About Us</h1>
+            <h3 class="flex-center align-text-center roboto-slab-text bold-500 about-us-description white-text">We primarily help car enthusiasts to enhance the radiance of their beloved engines and expands the business to other various fields.</h3>
+        </div>
+    </div>
+    <div class="flex-row full-height container dark-backrground">
+        <div class="flex-50 flex-end-center">
+            <mat-card [style.max-width.px]="500" class="overlay-card">
+                <mat-card-header>
+                    <mat-card-title>
+                        <h2 class="roboto-slab-text white-text">We’re here to make people <span style="color: rgba(15, 155, 3, 1);">PROUD</span> of their car and show off the unparalleled brilliance of their vehicle.</h2>
+                    </mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <h4 class="white-text">Not just for those with luxurious cars or motors, we are more than happy to invite anyone regardless of their status and background to be proud of their cars by making difference from now!</h4>
+                    <h4 class="white-text pb-32">Not just for those with luxurious cars or motors, we are more than happy to invite anyone regardless of their status and background to be proud of their cars by making difference from now!</h4>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="flex-50 flex-start-center">
+            <div class="flex-column">
+                <img src="../../../assets/images/about-us-img-1.png" alt="" class="overlay-img-1">
+                <img src="../../../assets/images/about-us-img-2.png" alt="" class="overlay-img-2">
+            </div>
+        </div>
+    </div>
 </section>

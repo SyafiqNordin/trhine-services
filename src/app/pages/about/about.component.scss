@@ -1,0 +1,39 @@
+:host {
+    mat-card {
+        background-color: rgba(52, 52, 52, 1);
+    }
+
+    .dark-backrground {
+        background-color: rgba(26, 26, 26, 1);
+    }
+
+    .about-us-description {
+        letter-spacing: 1px;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .overlay-card {
+        position: absolute;
+        left: 25%;
+        z-index: 3;
+    }
+
+    .overlay-img-1 {
+        position: absolute;
+        top: 5%;
+        z-index: 1;
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+
+    .overlay-img-2 {
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+}
