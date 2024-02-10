@@ -1,5 +1,39 @@
 <section class="flex-column full-height">
     <app-top-header></app-top-header>
     <app-header-tabs></app-header-tabs>
-    <p>services works!</p>
+    <div class="full-height">
+        <swiper-container 
+            loop="true" 
+            navigation="true" 
+            class="full-height"
+            effect="fade"
+        >
+            <ng-container *ngFor="let service of services; let i = index">
+                <swiper-slide class="flex-center">
+                    <video autoplay muted loop [attr.id]="'backgroundVideo_' + i" #backgroundVideo class="full-height">
+                        <source [src]="service.slideBackground" type="video/mp4">
+                    </video>
+                    <mat-card [style.backgroundColor]="service.cardBackgroundColor">
+                        <mat-card-header class="no-padding">
+                            <img mat-card-image [src]="service.cardImage" class="full-width">
+                        </mat-card-header>
+                        <mat-card-content class="no-padding">
+                            <h1 class="roboto-slab-text pt-16 white-text">Service 0{{ i+1 }} {{ service.name }}</h1>
+                            <div class="flex-column gap-8 pb-16">
+                                <h2 class="roboto-condesed-text no-margin white-text bold">{{ servicesCardContent[i].message1Title }}</h2>
+                                <h3 class="roboto-condesed-text white-text">{{ servicesCardContent[i].message1Description }}</h3>
+                            </div>
+                            <div class="flex-column gap-8 pb-16">
+                                <h2 class="roboto-condesed-text no-margin white-text bold">{{ servicesCardContent[i].message2Title }}</h2>
+                                <h3 class="roboto-condesed-text white-text">{{ servicesCardContent[i].message2Description }}</h3>
+                            </div>
+                            <div class="flex-end-center">
+                                <button mat-raised-button color="accent">Book your slot</button>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </swiper-slide>
+            </ng-container>
+        </swiper-container>
+    </div>
 </section>
