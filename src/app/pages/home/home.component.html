@@ -3,43 +3,39 @@
     <app-header-tabs></app-header-tabs>
     <div class="flex-row full-height">
         <div class="flex-column full-width container">
-            <div class="flex-row flex-50 top-section">
+            <div class="flex-row full-height top-section">
                 <div class="flex-column full-width flex-center gap-32">
                     <h1 class="roboto-serif-text mat-headline-2 no-margin bold-600 black-text">{{ company_tagline }}</h1>
                     <h1 class="no-margin bold-600 black-text">{{ greetings }}</h1>
                     <div class="flex-row gap-32">
-                        <button mat-raised-button color="primary">
+                        <button mat-raised-button color="primary" (click)="navigateToBookSlotPage()">
                             MAKE AN APPOINTMENT
                         </button>
-                        <button mat-raised-button color="accent">
+                        <button mat-raised-button color="accent" (click)="navigateToServicePage()">
                             DISCOVER MORE
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="flex-row flex-50 bottom-section">
+            <div class="flex-row full-height bottom-section">
                 <div class="flex-50">
-                    <div class="flex-row full-height">
-                        <div class="flex-20"></div>
+                    <div class="flex-row full-height flex-center">
                         <div class="flex-column flex-70 flex-center-start">
                             <h1 class="sansita-text bold primary-color-text">Our Company</h1>
                             <span class="roboto-serif-text white-text bold mat-headline-4 no-margin">
                                 We partner with you to create tailor-made solutions, ensuring the highest quality of service that aligns seamlessly with your unique needs and objectives.
                             </span>
                         </div>
-                        <div class="flex-10"></div>
                     </div>
                 </div>
                 <div class="flex-50">
-                    <div class="flex-row full-height">
-                        <div class="flex-20"></div>
+                    <div class="flex-row full-height flex-center">
                         <div class="flex-column flex-60 flex-center-start pb-8">
                             <h1 class="sansita-text bold primary-color-text">Why choose us?</h1>
                             <h1 class="roboto-serif-text white-text bold no-margin">
                                 We are one of the leading car detailing service and fastest growing multiple services business in Malaysia that always provide an unwavering commitment to excellence, personalized approach to every client, and a proven track record of delivering results. 
                             </h1>
                         </div>
-                        <div class="flex-20"></div>
                     </div>
                 </div>
             </div>

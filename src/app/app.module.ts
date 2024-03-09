@@ -1,5 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -13,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { register } from 'swiper/element/bundle';
 
@@ -35,7 +38,10 @@ register();
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],

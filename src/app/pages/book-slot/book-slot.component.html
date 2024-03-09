@@ -1,5 +1,32 @@
 <section class="flex-column full-height">
     <app-top-header></app-top-header>
     <app-header-tabs></app-header-tabs>
-    <p>book-slot works!</p>
+    <div class="flex-row flex-center full-height dark-backrground">
+        <mat-card class="flex-60 primary-color-card">
+            <mat-card-header class="flex-center">
+                <mat-card-title>
+                    <h1 class="bold-700">Book Your Slot</h1>
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <form [formGroup]="bookSlotForm">
+                    <div class="flex-row flex-space-between">
+                        <div class="flex-column flex-30">
+                            <mat-form-field>
+                                <mat-label>Full Name</mat-label>
+                                <input matInput formControlName="fullName"/>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label>Phone Number</mat-label>
+                                <input matInput type="text"/>
+                            </mat-form-field>
+                        </div>
+                        <div class="flex-40">
+                            dw
+                        </div>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
 </section>

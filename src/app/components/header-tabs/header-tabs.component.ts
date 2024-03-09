@@ -18,6 +18,7 @@ export class HeaderTabsComponent implements OnInit{
   ) {}
   
   public ngOnInit(): void {
+    this.listOfHeaderTabs.forEach(tab => tab.active = false);
     this.activatedRoute.url.subscribe(urlSegments => {
       for (let tab of listOfTabs) {
         if ( tab.path === '/' + urlSegments[0].path) {

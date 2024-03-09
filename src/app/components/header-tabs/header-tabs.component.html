@@ -1,9 +1,9 @@
 <section class="header-tabs">
-    <div class="flex-row">
-        <div class="flex-60 pl-64">
+    <div class="flex-row flex-space-between">
+        <div class="flex-50 pl-64">
             <img src="../../../assets/images/Company-brand.png" alt="Company-logo">
         </div>
-        <div class="flex-40 flex-row flex-start-center gap-64">
+        <div class="flex-40 flex-row flex-center gap-64">
             <ng-container *ngFor="let tab of listOfHeaderTabs">
                 <button mat-button (click)="navigateToPage(tab)">
                     <div class="flex-row flex-center">
