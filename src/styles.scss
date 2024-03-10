@@ -40,7 +40,7 @@
 
     .primary-color-card {
         background-color: $cardBackground-primary;
-        color: white;
+        color: black;
     }
 
     .primary-color-text {
@@ -50,6 +50,10 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-card {
+    border-radius: 15px !important;
+}
 
 .flex-row {
     display: flex !important;
@@ -94,7 +98,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .flex-space-between {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .flex-row-wrap {
