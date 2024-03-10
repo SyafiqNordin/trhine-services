@@ -17,7 +17,7 @@
 
     .primary-color-card {
         background-color: $cardBackground-primary;
-        color: white;
+        color: black;
     }
 
     .primary-color-text {
@@ -26,9 +26,9 @@
 }
 
 .darkTheme {
-    $dark-primary: mat.define-palette(mat.$lime-palette, 900);
-    $dark-accent: mat.define-palette(mat.$grey-palette, 900);
-    $cardBackground-primary: mat.get-color-from-palette($dark-primary, 700);
+    $dark-primary: mat.define-palette(mat.$blue-grey-palette, 700);
+    $dark-accent: mat.define-palette(mat.$grey-palette, 700);
+    $cardBackground-primary: mat.get-color-from-palette($dark-primary, 400);
     $text-color-primary: mat.get-color-from-palette($dark-primary, 500);
 
     $dark-theme: mat.define-dark-theme((color: (
@@ -40,7 +40,7 @@
 
     .primary-color-card {
         background-color: $cardBackground-primary;
-        color: black;
+        color: white;
     }
 
     .primary-color-text {
