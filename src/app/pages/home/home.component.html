@@ -4,8 +4,14 @@
     <div class="flex-row full-height">
         <div class="flex-column full-width container">
             <div class="flex-row full-height top-section">
+                <div class="video-container">
+                    <video autoplay muted loop class="video-background">
+                        <source src="../../../assets/video/home-page-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
                 <div class="flex-column full-width flex-center gap-32">
-                    <h1 class="roboto-serif-text mat-headline-2 no-margin bold-600 black-text">{{ company_tagline }}</h1>
+                    <h1 class="roboto-serif-text mat-headline-2 no-margin bold-600 black-text">Unleash The <span class="primary-color-text">Radiance</span></h1>
                     <h1 class="no-margin bold-600 black-text">{{ greetings }}</h1>
                     <div class="flex-row gap-32">
                         <button mat-raised-button color="primary" (click)="navigateToBookSlotPage()">
