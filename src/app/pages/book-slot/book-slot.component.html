@@ -24,7 +24,7 @@
                             </mat-form-field>
                             <mat-form-field>
                                 <mat-label>Service</mat-label>
-                                <mat-select formControlName="service" multiple>
+                                <mat-select formControlName="service">
                                     <ng-container *ngFor="let service of services">
                                         <mat-option [value]="service.name">{{service.name}}</mat-option>
                                     </ng-container>
