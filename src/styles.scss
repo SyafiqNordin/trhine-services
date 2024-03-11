@@ -55,6 +55,31 @@ mat-card {
     border-radius: 15px !important;
 }
 
+mat-form-field {
+    padding-bottom: 8px;
+}
+
+.mat-mdc-form-field {
+    .mat-mdc-form-field-error {
+        text-align: end;
+        color: rgb(167, 26, 26) !important;
+    }
+}
+
+.mat-mdc-snack-bar-container {
+    &.success-snackbar {
+      --mdc-snackbar-container-color: #129626;
+      --mat-mdc-snack-bar-button-color: #fff;
+      --mdc-snackbar-supporting-text-color: #fff;
+    }
+
+    &.error-snackbar {
+        --mdc-snackbar-container-color: #831111;
+        --mat-mdc-snack-bar-button-color: #fff;
+        --mdc-snackbar-supporting-text-color: #fff;
+      }
+}
+
 .flex-row {
     display: flex !important;
     flex-direction: row !important;
