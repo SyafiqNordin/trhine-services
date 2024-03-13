@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { FormBuilder,UntypedFormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 import { services } from '../../constants/services';
 import { servicesInterface } from '../../interface/services';
 import { BookSlot } from '../../class/bookSlot';
@@ -20,13 +21,19 @@ export class BookSlotComponent extends BaseComponent implements OnInit {
   public constructor(
     private readonly formBuilder: FormBuilder,
     private readonly bookSlotService: HttpBookSlotService,
+    private readonly activatedRoute: ActivatedRoute,
     private snackBar: MatSnackBar
   ) {
     super()
   }
 
   public ngOnInit(): void {
+    const selectedService: string | null = this.activatedRoute.snapshot.paramMap.get('service');
     this.setBookSlotForm();
+
+    if (selectedService !== null) {
+      this.bookSlotForm.get('service')?.setValue(selectedService);
+    }
   }
 
   public submitForm(): void {

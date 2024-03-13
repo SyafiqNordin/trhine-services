@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
 import { services } from '../../constants/services';
 import { servicesInterface } from '../../interface/services';
 import { servicesCardContentMessage } from './services-card-content-message';
@@ -13,7 +14,13 @@ export class ServicesComponent implements OnInit{
   public readonly services: servicesInterface[] = services;
   public readonly servicesCardContent: servicesCardContentMessageInterface[] = servicesCardContentMessage;
 
-  public ngOnInit(): void {
-    
+  constructor(
+    private readonly router: Router
+  ) {}
+
+  public ngOnInit(): void {}
+
+  public navigateToBookSlotPage(serviceName: string): void {
+    this.router.navigate(['/book-slot', {service: serviceName}]);
   }
 }

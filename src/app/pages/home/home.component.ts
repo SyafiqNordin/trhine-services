@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { services } from '../../constants/services';
 import { servicesInterface } from '../../interface/services';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',

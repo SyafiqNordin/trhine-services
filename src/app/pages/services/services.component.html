@@ -28,7 +28,7 @@
                                 <h3 class="roboto-condesed-text white-text">{{ servicesCardContent[i].message2Description }}</h3>
                             </div>
                             <div class="flex-end-center">
-                                <button mat-raised-button color="accent">Book your slot</button>
+                                <button mat-raised-button color="accent" (click)="navigateToBookSlotPage(service.name)">Book your slot</button>
                             </div>
                         </mat-card-content>
                     </mat-card>
