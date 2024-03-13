@@ -29,11 +29,7 @@ export class BookSlotComponent extends BaseComponent implements OnInit {
 
   public ngOnInit(): void {
     const selectedService: string | null = this.activatedRoute.snapshot.paramMap.get('service');
-    this.setBookSlotForm();
-
-    if (selectedService !== null) {
-      this.bookSlotForm.get('service')?.setValue(selectedService);
-    }
+    this.setBookSlotForm(selectedService);
   }
 
   public submitForm(): void {
@@ -61,12 +57,12 @@ export class BookSlotComponent extends BaseComponent implements OnInit {
     }
   }
 
-  private setBookSlotForm(): void {
+  private setBookSlotForm(selectedService: string | null): void {
     this.bookSlotForm = this.formBuilder.group({
       fullName: [null, Validators.required],
       email: [null, Validators.required],
       phoneNumber: [null, Validators.required],
-      service: [null, Validators.required],
+      service: [selectedService, Validators.required],
       date: [null, Validators.required],
       message: [null]
     })
