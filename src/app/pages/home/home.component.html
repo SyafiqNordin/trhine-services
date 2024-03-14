@@ -46,8 +46,15 @@
                 </div>
             </div>
             <div class="flex-row overlay-cards-row full-width flex-center gap-64">
-                <ng-container *ngFor="let service of services">
-                    <mat-card class="full-height overlay-cards primary-color-card">
+                <ng-container *ngFor="let service of services; let i = index">
+                    <mat-card 
+                        [@increaseDecreaseCardSize]="i === hoveredIndex ? 'hovered' : 'unhovered'" 
+                        class="full-height overlay-cards primary-color-card" 
+                        (mouseenter)="cardHovered(i)" 
+                        (mouseleave)="cardUnhovered()"
+                        [style.cursor]="i === hoveredIndex ? 'pointer' : 'default'"
+                        (click)="navigateToServicePage()"
+                        >
                         <mat-card-content class="full-height">
                             <div class="flex-column flex-center">
                                 <img [src]="service.icon" alt="" class="service-icon">
