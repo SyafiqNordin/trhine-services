@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationExtras, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { services } from '../../constants/services';
 import { servicesInterface } from '../../interface/services';
 import { servicesCardContentMessage } from './services-card-content-message';

@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { services } from '../../constants/services';
 import { servicesInterface } from '../../interface/services';
 import { BookSlot } from '../../class/bookSlot';
-import { Observable, Subject, finalize, takeUntil } from 'rxjs';
+import { Observable, finalize, takeUntil } from 'rxjs';
 import { HttpBookSlotService } from '../../http/http-book-slot.service';
 import { BaseComponent } from '../../base-component';
 

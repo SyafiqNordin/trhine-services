@@ -1,5 +1,4 @@
 import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
-import { OverlayContainer } from '@angular/cdk/overlay';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
